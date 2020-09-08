@@ -10,3 +10,14 @@ function getRandomInt(min, max) {
   }
 
 // add event on the right side button and make it to the screen avaiable
+
+
+  document.getElementById("actionEvent").addEventListener("click",function(){
+    console.log(event.target)
+  })
+ 
+
+
+
+  
+
