@@ -10,11 +10,35 @@ function getRandomInt(min, max) {
   }
 
 // add event on the right side button and make it to the screen avaiable
-
+var digitAll = "";
 
   document.getElementById("actionEvent").addEventListener("click",function(){
-    console.log(event.target)
+    const number = event.target.innerText;
+    
+    digitAll=digitAll+number
+    console.log(digitAll)
+    document.getElementById("screenRight").value=digitAll
+
+   
   })
+
+  document.getElementById("submit").addEventListener("click",function(){
+  
+    let num =document.getElementById("screenRight").value
+    let num2=document.getElementById("screen").value
+    
+    if(num===num2){
+      document.getElementById("green").style.display="block"
+    }
+    else{
+      document.getElementById("red").style.display="block"
+    }
+    
+
+  })
+
+  
+  
  
 
 
