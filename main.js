@@ -12,6 +12,7 @@ function getRandomInt(min, max) {
 // add event on the right side button and make it to the screen avaiable
 var digitAll = "";
 
+
   document.getElementById("actionEvent").addEventListener("click",function(){
     const number = event.target.innerText;
     
@@ -29,6 +30,7 @@ var digitAll = "";
     
     if(num===num2){
       document.getElementById("green").style.display="block"
+      
     }
     else{
       document.getElementById("red").style.display="block"
